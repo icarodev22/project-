@@ -31,7 +31,6 @@ Enquanto não houver foto, cada personalidade usa sua ilustração original, ide
 ## Início rápido (desenvolvimento)
 
 ```bash
-cd projeto1
 npm ci
 cp .env.example .env.local      # preencha ANTHROPIC_API_KEY para habilitar as conversas
 npm run dev                     # http://localhost:3000
@@ -73,7 +72,7 @@ As migrações são aditivas, idempotentes e registradas em `schema_migrations`.
 
 ## Deploy (Vercel) — requer autorização
 
-Nenhum deploy foi feito. Para publicar: importe o diretório `projeto1` como Root Directory, configure as variáveis de
+Nenhum deploy foi feito. Para publicar: importe este repositório na Vercel, configure as variáveis de
 `.env.example` (com `TRUST_PROXY=true`, `APP_SECRET`, `CRON_SECRET`, `DATABASE_URL`), e o `vercel.json` agenda o expurgo
 diário de conversas expiradas.
 
